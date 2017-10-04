@@ -9,4 +9,4 @@ There are two elements named as following: Sensor and Ground. The Sensor has the
 For the sensor is very easy to findd the libraries for the three modules (LSM303, L3GD20 and BMP180). The connection with the RS485 shield is standard (Arduino) and for the control select Auto and On (Off is the case where you need to program the Arduino with the shield connected).
 
 # The Ground
-For the ground, we need to separate the USB (Serial hardware for Arduino) of the AB signal provide by IC MAX485 (https://datasheets.maximintegrated.com/en/ds/MAX1487-MAX491.pdf) 
+For the ground, we need to separate the USB (Serial hardware for Arduino) of the AB signal provide by IC MAX485 (https://datasheets.maximintegrated.com/en/ds/MAX1487-MAX491.pdf). The easy way is to cut the RX/TX pins in the RS485 shields and using SoftwareSerial (in our case, we use the 10 and 11 pins). 
